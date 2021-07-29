@@ -36,5 +36,5 @@ fi
 
 
 time funannotate predict --species "Fusarium globosum" --strain "NRRL 26131" --max_intronlen 3000 --cpus $CPU \
-	 --input $INDIR/$GENOME --out $OUTDIR --name $LOCUSPREF  --protein_evidence $PEP --genemark_mode ES \
+	 --input $INDIR/$GENOME --out $OUTDIR --name $LOCUSPREF --genemark_mode ES \
 	--busco_db $BUSCODB
