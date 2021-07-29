@@ -2,7 +2,7 @@
 
 Ths module focuses on Euakryotic genome annotation with a focus on fungi.
 
-A basic presentation on annotation steps is available on [this link](Workshop_Annotation_2021/resource/presentation_1.pdf).
+A basic presentation on annotation steps is available on [this link](resource/presentation_1.pdf).
 
 ## Follow along
 
