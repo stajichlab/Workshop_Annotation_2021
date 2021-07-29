@@ -12,5 +12,5 @@ GENOME=A_fumigatus_SGAir0713.masked.fasta
 OUTDIR=annotate/$(basename $GENOME .masked.fasta)
 BUSCODB=ascomycota
 time funannotate annotate --species "Aspergillus fumigatus" --strain "SGAir0713" --cpus $CPU \
-	 --input  $OUTDIR --name $LOCUSPREF   --busco_db $BUSCODB
+	 --input  $OUTDIR --busco_db $BUSCODB
 
