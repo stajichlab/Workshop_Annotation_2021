@@ -75,6 +75,9 @@ But the assembly and training will take ~8hrs I expect.
 sbatch pipeline/03_predict.sh
 ```
 
+Take a look at what is in annotation folder.
+`/home/jstajich/Workshop_Annotation_2021/workshop/annotation_Afum/annotate/A_fumigatus_SGAir0713` also has results on the CGIAR cluster
+
 ## Functional annotation`
 
 ```
