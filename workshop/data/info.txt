@@ -1,0 +1,4 @@
+Locus prefix FGLOB1
+BioSample SAMN13683623 https://www.ncbi.nlm.nih.gov/biosample/13683623
+Assembly https://www.ncbi.nlm.nih.gov/assembly/GCA_013396165.1
+
