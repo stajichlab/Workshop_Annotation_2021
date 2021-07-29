@@ -7,7 +7,10 @@ A basic presentation on annotation steps is available on [this link](resource/pr
 ## Follow along
 
 To checkout a copy of the code for this project you can do this on the cmdline
-`git clone https://github.com/stajichlab/Workshop_Annotation_2021.git`
+
+```
+git clone https://github.com/stajichlab/Workshop_Annotation_2021.git
+```
 
 Now you can go into a folder
 ```
