@@ -1,6 +1,6 @@
 ## 2021 3rd Generation Genomics Africa Workshop
 
-Ths module focuses on Euakryotic genome annotation with a focus on fungi.
+This module focuses on Eukaryotic genome annotation with a focus on fungi.
 
 A basic presentation on annotation steps is available on [this link](resource/presentation_1.pdf).
 
