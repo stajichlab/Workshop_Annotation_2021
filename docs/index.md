@@ -2,10 +2,12 @@
 
 Ths module focuses on Euakryotic genome annotation with a focus on fungi.
 
+A basic presentation on annotation steps is available on [this link](Workshop_Annotation_2021/resource/presentation_1.pdf).
+
+## Follow along
+
 To checkout a copy of the code for this project you can do this on the cmdline
 `git clone https://github.com/stajichlab/Workshop_Annotation_2021.git`
-
-A basic presentation on annotation steps.
 
 Now you can go into a folder
 ```
@@ -15,7 +17,8 @@ ls
 ```
 
 The workshop will focus on running several tools on the
-1. Assembly of a genome using spades
+
+## Assembly of a genome using spades
 
 ```
 cd assembly/ISSF_21_Chr7
@@ -25,7 +28,7 @@ This is the script to run a spades assembly with some toy data.
 ```
 #!/usr/bin/bash -l
 #SBATCH -p batch -N 1 -n 8 --mem 32gb --out spades_assemble.log
-i
+
 CPU=1
 if [ $SLURM_CPUS_ON_NODE ]; then
   CPU=$SLURM_CPUS_ON_NODE
@@ -36,10 +39,10 @@ module load spades/3.13.0
 spades.py -1 ISSF_21_Chr_7_1.fq.gz -2 ISSF_21_Chr_7_2.fq.gz -s ISSF_21_Chr_7_single.fq.gz -t $CPU --careful -o ISSF_21_Chr_7
 ```
 
-2.  Reset and go back to initial folder - assuming you checked out in your home directory
+## Reset and go back to initial folder - assuming you checked out in your home directory
 `cd ~/Workshop_Annotation_2021`
 
-3. Going do annotation of existing genomes.
+## Going do annotation of existing genomes.
 
 We will use [Funannotate](https://github.com/nextgenusfs/funannotate/) or [funannotate readthedocs](https://funannotate.readthedocs.io/en/latest/). https://doi.org/10.5281/zenodo.1134477
 
