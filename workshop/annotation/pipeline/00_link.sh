@@ -19,3 +19,4 @@ gzip -dc $IN/${PREFIX}_genomic.fna.gz > genomes/Fusarium_globosum_NRRL_26131.sor
 perl -i -p -e 's/>JAAQPF010+(\d+)\.1\s+.+/>scf_$1/' genomes/Fusarium_globosum_NRRL_26131.sorted.fasta
 
 gzip -dc $IN/${PREFIX}_cds_from_genomic.fna.gz > evidence/Fusarium_globosum_NRRL_26131.transcripts.fasta
+gzip -dc $IN/${PREFIX}_protein.faa.gz > evidence/Fusarium_globosum_NRRL_26131.proteins.fasta

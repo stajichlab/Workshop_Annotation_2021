@@ -8,4 +8,4 @@ if [ $SLURM_CPUS_ON_NODE ]; then
 fi
 INDIR=genomes
 GENOME=Fusarium_globosum_NRRL_26131.sorted.fasta
-funannotate mask -m tantan --cpus $CPU -i $INDIR/$GENOME -o $INDIR/$(basename $GENOME .sorted.fasta).masked.fasta
+time funannotate mask -m tantan --cpus $CPU -i $INDIR/$GENOME -o $INDIR/$(basename $GENOME .sorted.fasta).masked.fasta
