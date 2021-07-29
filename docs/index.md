@@ -2,4 +2,4 @@
 
 Ths module focuses on Euakryotic genome annotation with a focus on fungi.
 
-Data are in [data](/data) folder.
+Data are in [data](data) folder.
