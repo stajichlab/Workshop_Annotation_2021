@@ -45,7 +45,7 @@ spades.py -1 ISSF_21_Chr_7_1.fq.gz -2 ISSF_21_Chr_7_2.fq.gz -s ISSF_21_Chr_7_sin
 ## Reset and go back to initial folder - assuming you checked out in your home directory
 `cd ~/Workshop_Annotation_2021`
 
-## Going do annotation of existing genomes.
+## Annotation of an assembled genome.
 
 We will use [Funannotate](https://github.com/nextgenusfs/funannotate/) or [funannotate readthedocs](https://funannotate.readthedocs.io/en/latest/). https://doi.org/10.5281/zenodo.1134477
 
@@ -58,6 +58,8 @@ See the pipeline folder for scripts which will run on the CGIAR cluster.
 
 ## Setup and repeat mask
 
+First script downloads an unannotate genome from NCBI and gets some supporting files for annotation - proteins and Transcripts from a reference strain in the FungiDB database.
+
 ```
 cd ~/Workshop_Annotation_2021/workshop/annotation_Afum
 sbatch pipeline/00_link.sh
@@ -65,7 +67,7 @@ sbatch pipeline/01_repeat_mask.sh
 ```
 Wait for it to finish.
 
-Check out files in the `logs` directory
+Check out info in the `logs` directory to see if any errors
 
 ## Training
 
