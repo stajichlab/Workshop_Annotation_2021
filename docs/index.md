@@ -5,6 +5,8 @@ Ths module focuses on Euakryotic genome annotation with a focus on fungi.
 To checkout a copy of the code for this project you can do this on the cmdline
 `git clone https://github.com/stajichlab/Workshop_Annotation_2021.git`
 
+A basic presentation on annotation steps.
+
 Now you can go into a folder
 ```
 cd Workshop_Annotation_2021
@@ -39,9 +41,14 @@ spades.py -1 ISSF_21_Chr_7_1.fq.gz -2 ISSF_21_Chr_7_2.fq.gz -s ISSF_21_Chr_7_sin
 
 3. Going do annotation of existing genomes.
 
+We will use [Funannotate](https://github.com/nextgenusfs/funannotate/) or [funannotate readthedocs](https://funannotate.readthedocs.io/en/latest/). https://doi.org/10.5281/zenodo.1134477
+
 We will use code that is in the checked out repository.
+
 Also available here to browse on web.
 https://github.com/stajichlab/Workshop_Annotation_2021/tree/main/workshop/annotation_Afum/
+
+See the pipeline folder for scripts which will run on the CGIAR cluster.
 
 ## Setup and repeat mask
 
