@@ -1,6 +1,6 @@
 #!/usr/bin/bash -l
 #SBATCH -p batch -N 1 -n 8 --mem 32gb --out spades_assemble.log
-i
+
 CPU=1
 if [ $SLURM_CPUS_ON_NODE ]; then
   CPU=$SLURM_CPUS_ON_NODE
