@@ -1,5 +1,5 @@
 #!/usr/bin/bash -l
-#SBATCH -p batch -N 1 -n 16 --mem 16gb --out logs/01_mask.log --time 24:00:00
+#SBATCH -p batch -N 1 -n 4 --mem 16gb --out logs/01_mask.log --time 24:00:00
 
 conda activate funannotate
 CPU=1

@@ -7,9 +7,9 @@ fi
 
 conda activate funannotate
 mkdir -p annotate
-LOCUSPREF=AFISSF21
+LOCUSPREF=SG0713
 INDIR=genomes
-GENOME=A_fumigatus_ISSF_21_Chr7.masked.fasta
+GENOME=A_fumigatus_SGAir0713.masked.fasta
 OUTDIR=annotate/$(basename $GENOME .masked.fasta)
 BUSCODB=dikarya # would change this to closest taxon group in BUSCO download set 
 # https://busco.ezlab.org/  https://busco-data.ezlab.org/v4/data/lineages/
@@ -23,7 +23,7 @@ BUSCODB=dikarya # would change this to closest taxon group in BUSCO download set
 PEP=evidence/FungiDB-53_AfumigatusAf293_AnnotatedProteins.fasta
 
 
-#CDNA=evidence/FungiDB-53_AfumigatusAf293_AnnotatedTranscripts.fasta
+CDNA=evidence/FungiDB-53_AfumigatusAf293_AnnotatedTranscripts.fasta
 # if you ddidn't run train you can specify transcript with adding this option
 # --transcript_evidence $CDNA
 
@@ -34,6 +34,6 @@ if [ ! -f $HOME/.gm_key ]; then
 fi
 
 
-time funannotate predict --species "Aspergillus fumigatus" --strain "ISSF_21" --max_intronlen 3000 --cpus $CPU \
+time funannotate predict --species "Aspergillus fumigatus" --strain "SGAir0713" --max_intronlen 3000 --cpus $CPU \
 	 --input $INDIR/$GENOME --out $OUTDIR --name $LOCUSPREF --genemark_mode ES \
-	--busco_db $BUSCODB
+	--busco_db $BUSCODB --protein_evidence $PEP --transcript_evidence $CDNA
