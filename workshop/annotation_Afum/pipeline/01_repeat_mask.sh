@@ -7,5 +7,5 @@ if [ $SLURM_CPUS_ON_NODE ]; then
   CPU=$SLURM_CPUS_ON_NODE
 fi
 INDIR=genomes
-GENOME=A_fumigatus_ISSF_21_Chr7.sorted.fasta
+GENOME=A_fumigatus_SGAir0713.sorted.fasta
 time funannotate mask -m tantan --cpus $CPU -i $INDIR/$GENOME -o $INDIR/$(basename $GENOME .sorted.fasta).masked.fasta
